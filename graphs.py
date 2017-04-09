@@ -43,7 +43,7 @@ def draw_pstree(graph, pstree, filename, layout='before'):
 
     G.draw(filename)
 
-if __name__ == '__main__':
+def main():
     g1 = {1: [2,9],
           2: [1,3,16],
           3: [2,4,7,15],
@@ -123,3 +123,6 @@ if __name__ == '__main__':
 
     draw_tree(g2_pstree, 'g2_tree.png')
     draw_pstree(g2, g2_pstree, 'g2_pstree.png')
+
+if __name__ == '__main__':
+    main()
